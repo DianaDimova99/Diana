@@ -1,0 +1,75 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f4;
+}
+
+/* Main Title */
+.main-title {
+    font-size: 36px;
+    text-align: left; /* Align the title to the left */
+    margin-left: 50px; /* 50px gap on the left side so that the text is aligned with the picture */
+    margin-bottom: 20px; /* 20px gap between the title and the image */
+    color: #663399; /*Color of the main title */
+}
+
+/* Content Layout */
+.content {
+    display: flex; /* Use Flexbox to align items horizontally */
+    justify-content: flex-start; /* Place items from left to right */
+    align-items: flex-start; /* Align both vertically at the top */
+    margin-left: 50px; /* 50px space from the left side of the screen */
+}
+
+/* Image Container */
+.image-container {
+    width: 45%; /* Image takes up 45% of the width */
+    max-width: 600px; /* Limit max width */
+    margin-right: 20px; /* 20px space between the image and the text */
+    overflow: hidden; /* Prevent image from overflowing when scaled */
+}
+
+.image-container.pop-out {
+    transform: scale(1.1); /* Image will scale up by 10% on hover */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+
+.image {
+    width: 100%; /* Make the image responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Text Container (Numbered Titles) */
+.text-container {
+    width: 45%; /* Text container takes up 45% of the width */
+    margin-top: 70px; /*So that the text is relativly in the center of the picture*/
+    margin-left: 80px; /*Space between the picture and the numbered text*/
+}
+
+/* Individual Section (Title and Sentence) */
+.section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #663399;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
